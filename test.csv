@@ -1,0 +1,3 @@
+qid,labelEN,descriptionEn,country_uuid,country,country_StartDate_nodeId,country_StartDate_val,country_StartDate_prec,country_ref1_hash,country_ref1_reURL,birthDatge_uuid,birthDatge_nodeId,birthDatge_val,birthDatge_prec
+Q234221,Grant,historical character,2EA86D64-304A-43C0-A172-9467077D3AC3,Q346,0bf2b838-af15-405c-9c5c-a26d6a63a692,1982-00-00T00:00:00Z,9,,,42B13471-B3D6-4EB4-8749-D344BAD1BCEA,98c486f1-f493-4404-8fda-4ab0f5afb3cb,1960-03-14T00:00:00Z,11
+Q234222,Coble,legislator,6379B2EB-A56B-436A-A227-3CAC2B0195AC,Q53079,f2aea0d2-1246-4ca7-b493-602306952bba,1972-00-00T00:00:00Z,9,,,8173749C-AA51-432B-A1CD-3CAE4D75B3C5,d4ae09a5-a89f-45f6-b43f-7f1ddc7a6b38,1972-06-01T00:00:00Z,11

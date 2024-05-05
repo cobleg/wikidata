@@ -1,0 +1,119 @@
+{
+        "@type": "TableGroup",
+        "@context": "http://www.w3.org/ns/csvw",
+        "tables": [
+            {
+                "url": "test.csv",
+                "tableSchema": {
+                    "columns": [ 
+                        {
+                            "titles": "qid",
+                            "name": "qid",
+                            "datatype": "string",
+                            "suppressOutput": true
+                        },
+                        {
+                            "titles": "labelEN",
+                            "name": "labelEN",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/{qid}",
+                            "propertyUrl": "rdfs:label",
+                            "lang": "en"
+                        },
+                        {
+                            "titles": "descriptionEn",
+                            "name": "descriptionEn",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/{qid}",
+                            "propertyUrl": "schema:description",
+                            "lang": "en"
+                        },
+                        {
+                            "titles": "country_uuid",
+                            "name": "country_uuid",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/{qid}",
+                            "propertyUrl": "http://www.wikidata.org/prop/P17",
+                            "valueUrl": "http://www.wikidata.org/entity/statement/{qid}-{country_uuid}"
+                        },
+                        {
+                            "titles": "country",
+                            "name": "country",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{country_uuid}",
+                            "propertyUrl": "http://www.wikidata.org/prop/statement/P17",
+                            "valueUrl": "http://www.wikidata.org/entity/{country}"
+                        },
+                        {
+                            "titles": "country_StartDate_nodeId",
+                            "name": "country_StartDate_nodeId",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{country_uuid}",
+                            "propertyUrl": "http://www.wikidata.org/prop/qualifier/value/P87",
+                            "valueUrl": "http://example.com/.well-known/genid/{country_StartDate_nodeId}"
+                        },
+                        {
+                            "titles": "country_StartDate_val",
+                            "name": "country_StartDate_val",
+                            "datatype": "dateTime",
+                            "aboutUrl": "http://example.com/.well-known/genid/{country_StartDate_nodeId}",
+                            "propertyUrl": "http://wikiba.se/ontology#timeValue"
+                        },
+                        {
+                            "titles": "country_StartDate_prec",
+                            "name": "country_StartDate_prec",
+                            "datatype": "integer",
+                            "aboutUrl": "http://example.com/.well-known/genid/{country_StartDate_nodeId}",
+                            "propertyUrl": "http://wikiba.se/ontology#timePrecision"
+                        },
+                        {
+                            "titles": "country_ref1_hash",
+                            "name": "country_ref1_hash",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{country_uuid}",
+                            "propertyUrl": "prov:wasDerivedFrom",
+                            "valueUrl": "http://www.wikidata.org/reference/{country_ref1_hash}"
+                        },
+                        {
+                            "titles": "country_ref1_reURL",
+                            "name": "country_ref1_reURL",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/reference/{country_ref1_hash}",
+                            "propertyUrl": "http://www.wikidata.org/prop/reference/P93",
+                            "valueUrl": "{+country_ref1_reURL}"
+                        },
+                        {
+                            "titles": "birthDatge_uuid",
+                            "name": "birthDatge_uuid",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/{qid}",
+                            "propertyUrl": "http://www.wikidata.org/prop/P18",
+                            "valueUrl": "http://www.wikidata.org/entity/statement/{qid}-{birthDatge_uuid}"
+                        },
+                        {
+                            "titles": "birthDatge_nodeId",
+                            "name": "birthDatge_nodeId",
+                            "datatype": "string",
+                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{birthDatge_uuid}",
+                            "propertyUrl": "http://www.wikidata.org/prop/statement/value/P18",
+                            "valueUrl": "http://example.com/.well-known/genid/{birthDatge_nodeId}"
+                        },
+                        {
+                            "titles": "birthDatge_val",
+                            "name": "birthDatge_val",
+                            "datatype": "dateTime",
+                            "aboutUrl": "http://example.com/.well-known/genid/{birthDatge_nodeId}",
+                            "propertyUrl": "http://wikiba.se/ontology#timeValue"
+                        },
+                        {
+                            "titles": "birthDatge_prec",
+                            "name": "birthDatge_prec",
+                            "datatype": "integer",
+                            "aboutUrl": "http://example.com/.well-known/genid/{birthDatge_nodeId}",
+                            "propertyUrl": "http://wikiba.se/ontology#timePrecision"
+                        }
+                    ]
+                }
+            }
+        ]
+}
