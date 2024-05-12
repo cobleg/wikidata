@@ -3,7 +3,7 @@
         "@context": "http://www.w3.org/ns/csvw",
         "tables": [
             {
-                "url": "test2.csv",
+                "url": "test3.csv",
                 "tableSchema": {
                     "columns": [ 
                         {
@@ -21,60 +21,20 @@
                             "lang": "en"
                         },
                         {
-                            "titles": "descriptionEN",
-                            "name": "descriptionEN",
+                            "titles": "located in the administrative territorial entity_uuid",
+                            "name": "located in the administrative territorial entity_uuid",
                             "datatype": "string",
                             "aboutUrl": "http://www.wikidata.org/entity/{qid}",
-                            "propertyUrl": "schema:description",
-                            "lang": "en"
+                            "propertyUrl": "http://www.wikidata.org/prop/P131",
+                            "valueUrl": "http://www.wikidata.org/entity/statement/{qid}-{located in the administrative territorial entity_uuid}"
                         },
                         {
-                            "titles": "country_uuid",
-                            "name": "country_uuid",
+                            "titles": "located in the administrative territorial entity",
+                            "name": "located in the administrative territorial entity",
                             "datatype": "string",
-                            "aboutUrl": "http://www.wikidata.org/entity/{qid}",
-                            "propertyUrl": "http://www.wikidata.org/prop/P17",
-                            "valueUrl": "http://www.wikidata.org/entity/statement/{qid}-{country_uuid}"
-                        },
-                        {
-                            "titles": "country",
-                            "name": "country",
-                            "datatype": "string",
-                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{country_uuid}",
-                            "propertyUrl": "http://www.wikidata.org/prop/statement/P17",
-                            "valueUrl": "http://www.wikidata.org/entity/{country}"
-                        },
-                        {
-                            "titles": "part of_uuid",
-                            "name": "part of_uuid",
-                            "datatype": "string",
-                            "aboutUrl": "http://www.wikidata.org/entity/{qid}",
-                            "propertyUrl": "http://www.wikidata.org/prop/P361",
-                            "valueUrl": "http://www.wikidata.org/entity/statement/{qid}-{part of_uuid}"
-                        },
-                        {
-                            "titles": "part of",
-                            "name": "part of",
-                            "datatype": "string",
-                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{part of_uuid}",
-                            "propertyUrl": "http://www.wikidata.org/prop/statement/P361",
-                            "valueUrl": "http://www.wikidata.org/entity/{part of}"
-                        },
-                        {
-                            "titles": "instance of_uuid",
-                            "name": "instance of_uuid",
-                            "datatype": "string",
-                            "aboutUrl": "http://www.wikidata.org/entity/{qid}",
-                            "propertyUrl": "http://www.wikidata.org/prop/P31",
-                            "valueUrl": "http://www.wikidata.org/entity/statement/{qid}-{instance of_uuid}"
-                        },
-                        {
-                            "titles": "instance of",
-                            "name": "instance of",
-                            "datatype": "string",
-                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{instance of_uuid}",
-                            "propertyUrl": "http://www.wikidata.org/prop/statement/P31",
-                            "valueUrl": "http://www.wikidata.org/entity/{instance of}"
+                            "aboutUrl": "http://www.wikidata.org/entity/statement/{qid}-{located in the administrative territorial entity_uuid}",
+                            "propertyUrl": "http://www.wikidata.org/prop/statement/P131",
+                            "valueUrl": "http://www.wikidata.org/entity/{located in the administrative territorial entity}"
                         }
                     ]
                 }
